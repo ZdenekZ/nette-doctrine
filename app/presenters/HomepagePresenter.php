@@ -63,7 +63,7 @@ class HomepagePresenter extends BasePresenter
 	{
 		$blogsRepo = $this->em->getRepository(Blog::class);
 		$blog = $blogsRepo->find($blogID);
-		$article = new Article($blog, $name, 'asdkfhaksdhkhrtkah;gkh');
+		$article = new Article($blog, $name, 'asdkfhaksdhkhrtk');
 		$this->em->persist($article);
 		$this->em->flush();
 		$this->redirect('articles');
