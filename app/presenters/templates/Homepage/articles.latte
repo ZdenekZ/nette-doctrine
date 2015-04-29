@@ -1,9 +1,0 @@
-{* This is the welcome page, you can delete it *}
-{block content}
-    <div n:foreach="$articles as $article">
-    <span>{$article->id|number:2:',':' '}</span>
-    <span>{$article->blog->name}</span>
-    <span>{$article->title}</span>
-    <span>{$article->content}</span>
-    </div>
-{/block}
