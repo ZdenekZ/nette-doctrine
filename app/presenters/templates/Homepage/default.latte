@@ -1,0 +1,8 @@
+{* This is the welcome page, you can delete it *}
+{block content}
+    <div n:foreach="$posts as $post">
+    <span>{$post->id|number:2:',':' '}</span>
+    <span>{$post->content}</span>
+    <span>{$post->created_at |date:'%d.%m.%Y'}</span>
+    </div>
+{/block}
